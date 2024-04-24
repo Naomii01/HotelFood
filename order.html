@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html"> <img src="img/logo.png" alt="Hotel Logo"></a>
+            </div>
+            <div class="right">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="order.html">Order</a>
+               <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="center-content">
+        <h3>Order Food Online</h3>
+    </div>
+    <span class="break"></span>
+    <div class="form-container">
+        <form action="submit_order.php" method="post" class="order-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            </div>
+
+            <div class="form-group">
+                <label for="food">Select Food:</label>
+                <select id="food" name="food">
+                    <option value="Fish Fillet">Fish Fillet</option>
+                    <option value="Grilled Tilapia">Grilled Tilapia</option>
+                    <option value="Smoked Salmon">Smoked Salmon</option>
+                    <option value="Sushi">Sushi</option>
+                    <option value="Classic Mojito">Classic Mojito</option>
+                    <option value="Virgin Pina Colada">Virgin Pina Colada</option>
+                    <option value="Fruit Punch">Fruit Punch</option>
+                    <option value="Watermelon Juice">Watermelon Juice</option>
+                    <option value="Mango Tango Smoothie">Mango Tango Smoothie</option>
+                    <option value="Pineapple Paradise">Pineapple Paradise</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Special Notes:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <h2>Created by Naomi @2024</h2>
+        <div class="logo-end">
+            <a href="index.html"> <img src="img/logo.png" alt="Hotel Logo"></a>
+        </div>
+    </footer>
+</body>
+</html>
